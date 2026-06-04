@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Westfield Dominion - Global Shopping Destination</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Westfield Dominion - The world's premier retail, dining, and entertainment destination. Experience global luxury, culinary excellence, and unforgettable moments.">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navigation" id="mainNav">
+        <div class="nav-logo">
+            <span class="logo-text">WESTFIELD DOMINION</span>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#opening" class="nav-link" data-section="opening">Intro</a></li>
+            <li><a href="#why" class="nav-link" data-section="why">Why Us</a></li>
+            <li><a href="#retail" class="nav-link" data-section="retail">Retail</a></li>
+            <li><a href="#luxury" class="nav-link" data-section="luxury">Luxury</a></li>
+            <li><a href="#dining" class="nav-link" data-section="dining">Dining</a></li>
+            <li><a href="#entertainment" class="nav-link" data-section="entertainment">Entertainment</a></li>
+            <li><a href="#events" class="nav-link" data-section="events">Events</a></li>
+            <li><a href="#cta" class="nav-link" data-section="cta">Partner With Us</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Main Container -->
+    <main id="mainContent">
+        <!-- 1. OPENING - Cinematic Intro -->
+        <section id="opening" class="section hero-section" data-section="opening">
+            <video autoplay muted playsinline class="background-video" id="heroVideo">
+                <source src="assets/videos/hero-intro.mp4" type="video/mp4">
+            </video>
+            <div class="video-fallback"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title" id="heroTitle">
+                    <span class="title-line">Welcome to</span>
+                    <span class="title-line title-bold">Westfield Dominion</span>
+                    <span class="title-line title-sub">The World's Premier Shopping Destination</span>
+                </h1>
+                <p class="hero-subtitle">Where retail dreams meet global influence</p>
+                <button class="cta-button primary" id="heroScrollBtn">Discover More</button>
+            </div>
+            <div class="scroll-indicator" id="scrollIndicator">
+                <span>Scroll to explore</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
+        </section>
+
+        <!-- 2. WHY THIS PROPERTY -->
+        <section id="why" class="section why-section" data-section="why">
+            <div class="section-header">
+                <h2>Why Westfield Dominion</h2>
+                <p class="section-subtitle">Global Impact, Local Influence</p>
+            </div>
+            <div class="metrics-grid">
+                <div class="metric-card" data-metric="visitors">
+                    <div class="metric-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>150M+</h3>
+                    <p>Annual Visitors</p>
+                    <span class="metric-detail">From 195+ countries</span>
+                </div>
+                <div class="metric-card" data-metric="brands">
+                    <div class="metric-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="2" y1="17" x2="22" y2="17"></line>
+                            <path d="M6 20h12"></path>
+                        </svg>
+                    </div>
+                    <h3>750+</h3>
+                    <p>Premium Retailers</p>
+                    <span class="metric-detail">All major luxury brands</span>
+                </div>
+                <div class="metric-card" data-metric="revenue">
+                    <div class="metric-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h3>$8.2B+</h3>
+                    <p>Annual Revenue</p>
+                    <span class="metric-detail">Highest-grossing mall globally</span>
+                </div>
+                <div class="metric-card" data-metric="footfall">
+                    <div class="metric-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polygon points="12 6 18 18 12 15 6 18 12 6"></polygon>
+                        </svg>
+                    </div>
+                    <h3>410K</h3>
+                    <p>Daily Footfall</p>
+                    <span class="metric-detail">Peak retail performance</span>
+                </div>
+            </div>
+            <div class="why-content">
+                <h3>Strategic Competitive Advantages</h3>
+                <div class="advantages-grid">
+                    <div class="advantage-item">
+                        <h4>Prime Location</h4>
+                        <p>Centrally positioned with unmatched accessibility and visibility. Adjacent to major transportation hubs.</p>
+                    </div>
+                    <div class="advantage-item">
+                        <h4>Premium Demographics</h4>
+                        <p>Average household income $250K+. 68% are high-net-worth individuals and luxury consumers.</p>
+                    </div>
+                    <div class="advantage-item">
+                        <h4>Global Reach</h4>
+                        <p>International brand launchpad. 45% of visitors are international travelers seeking authentic luxury.</p>
+                    </div>
+                    <div class="advantage-item">
+                        <h4>Year-Round Events</h4>
+                        <p>365 days of curated activations. Proven event track record with Fortune 500 partnerships.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. RETAIL -->
+        <section id="retail" class="section retail-section" data-section="retail">
+            <div class="section-header">
+                <h2>Retail Excellence</h2>
+                <p class="section-subtitle">The world's most coveted retail space</p>
+            </div>
+            <div class="retail-showcase">
+                <div class="retail-card luxury-tier">
+                    <div class="retail-image" style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);"></div>
+                    <h3>Luxury Tier</h3>
+                    <p>Flagship destinations for the world's most prestigious brands</p>
+                    <ul class="brand-list">
+                        <li>Hermès</li>
+                        <li>Louis Vuitton</li>
+                        <li>Rolex</li>
+                        <li>Ferrari</li>
+                        <li>Cartier</li>
+                    </ul>
+                    <div class="metric">750 sqm avg flagship</div>
+                </div>
+                <div class="retail-card contemporary-tier">
+                    <div class="retail-image" style="background: linear-gradient(135deg, #8B7D6B 0%, #D3D3D3 100%);"></div>
+                    <h3>Contemporary</h3>
+                    <p>Curated selection of innovative and emerging luxury</p>
+                    <ul class="brand-list">
+                        <li>Yves Saint Laurent</li>
+                        <li>Balenciaga</li>
+                        <li>Valentino</li>
+                        <li>Gucci</li>
+                        <li>Prada</li>
+                    </ul>
+                    <div class="metric">500 sqm avg store</div>
+                </div>
+                <div class="retail-card lifestyle-tier">
+                    <div class="retail-image" style="background: linear-gradient(135deg, #4A90E2 0%, #7B68EE 100%);"></div>
+                    <h3>Lifestyle & Wellness</h3>
+                    <p>Premium lifestyle and health experiences</p>
+                    <ul class="brand-list">
+                        <li>Swarovski</li>
+                        <li>Apple</li>
+                        <li>Spa & Wellness</li>
+                        <li>Fitness Centers</li>
+                        <li>Beauty Institutes</li>
+                    </ul>
+                    <div class="metric">1000+ sqm available</div>
+                </div>
+            </div>
+            <div class="retail-stats">
+                <div class="stat-item">
+                    <h4>Growth Trajectory</h4>
+                    <p>+23% YoY retail growth in premium categories</p>
+                </div>
+                <div class="stat-item">
+                    <h4>Occupancy Rate</h4>
+                    <p>97% occupancy with waiting list for flagship spaces</p>
+                </div>
+                <div class="stat-item">
+                    <h4>Average Transaction Value</h4>
+                    <p>$850+ per transaction, 40% higher than industry average</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. LUXURY EXPERIENCES -->
+        <section id="luxury" class="section luxury-section" data-section="luxury">
+            <div class="section-header">
+                <h2>Luxury Experiences</h2>
+                <p class="section-subtitle">Elevate your brand to unprecedented heights</p>
+            </div>
+            <div class="luxury-grid">
+                <div class="luxury-card">
+                    <div class="luxury-image" style="background: linear-gradient(135deg, #1a1a1a 0%, #4a4a4a 100%); position: relative;">
+                        <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 4rem;">👑</div>
+                    </div>
+                    <h3>Exclusive Lounges</h3>
+                    <p>VIP lounges with concierge services, private shopping appointments, and bespoke experiences</p>
+                    <span class="luxury-detail">5-star amenities, 24/7 service</span>
+                </div>
+                <div class="luxury-card">
+                    <div class="luxury-image" style="background: linear-gradient(135deg, #8B7355 0%, #D4AF37 100%); position: relative;">
+                        <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 4rem;">💎</div>
+                    </div>
+                    <h3>Private Collections</h3>
+                    <p>Dedicated spaces for exclusive collections and limited editions. Direct access to brand leadership.</p>
+                    <span class="luxury-detail">By appointment only</span>
+                </div>
+                <div class="luxury-card">
+                    <div class="luxury-image" style="background: linear-gradient(135deg, #C0C0C0 0%, #E8E8E8 100%); position: relative;">
+                        <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 4rem;">🥂</div>
+                    </div>
+                    <h3>Champagne Bars</h3>
+                    <p>Curated selection of fine wines and champagnes. Sommelier-guided tastings and pairings.</p>
+                    <span class="luxury-detail">Michelin-trained sommeliers</span>
+                </div>
+                <div class="luxury-card">
+                    <div class="luxury-image" style="background: linear-gradient(135deg, #FFB6C1 0%, #FF69B4 100%); position: relative;">
+                        <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 4rem;">✨</div>
+                    </div>
+                    <h3>Spa & Wellness</h3>
+                    <p>World-class spa facilities with treatments by internationally acclaimed therapists.</p>
+                    <span class="luxury-detail">Swiss precision, holistic wellness</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. DINING & LIFESTYLE -->
+        <section id="dining" class="section dining-section" data-section="dining">
+            <div class="section-header">
+                <h2>Culinary Destination</h2>
+                <p class="section-subtitle">Gastronomic excellence from around the world</p>
+            </div>
+            <div class="dining-showcase">
+                <div class="dining-category">
+                    <h3>Michelin-Starred Restaurants</h3>
+                    <div class="dining-items">
+                        <div class="dining-item">
+                            <span class="star">⭐⭐⭐</span>
+                            <h4>Le Bernardin Experience</h4>
+                            <p>Contemporary French cuisine by world-renowned chef</p>
+                        </div>
+                        <div class="dining-item">
+                            <span class="star">⭐⭐</span>
+                            <h4>Hakkasan Lounge</h4>
+                            <p>Modern Chinese dining in an iconic setting</p>
+                        </div>
+                        <div class="dining-item">
+                            <span class="star">⭐⭐</span>
+                            <h4>Nobu Elevate</h4>
+                            <p>Contemporary Japanese and Peruvian fusion</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dining-category">
+                    <h3>Global Culinary Experiences</h3>
+                    <div class="dining-items">
+                        <div class="dining-item">
+                            <span class="cuisine">🍣</span>
+                            <h4>Authentic Japanese Kaiseki</h4>
+                            <p>Multi-course traditional dining experience</p>
+                        </div>
+                        <div class="dining-item">
+                            <span class="cuisine">🇮🇹</span>
+                            <h4>Italian Trattoria Authentic</h4>
+                            <p>Regional Italian specialties and wine pairings</p>
+                        </div>
+                        <div class="dining-item">
+                            <span class="cuisine">🥩</span>
+                            <h4>Argentine Parrilla & Wine</h4>
+                            <p>Prime cuts with world-class Argentine wines</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dining-stats">
+                <div class="stat-card">
+                    <h4>120+</h4>
+                    <p>Dining & Beverage Outlets</p>
+                </div>
+                <div class="stat-card">
+                    <h4>42</h4>
+                    <p>Michelin-Starred Restaurants</p>
+                </div>
+                <div class="stat-card">
+                    <h4>$2.1B</h4>
+                    <p>Annual F&B Revenue</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. ATTRACTIONS & ENTERTAINMENT -->
+        <section id="entertainment" class="section entertainment-section" data-section="entertainment">
+            <div class="section-header">
+                <h2>Entertainment & Attractions</h2>
+                <p class="section-subtitle">World-class experiences under one roof</p>
+            </div>
+            <div class="attractions-carousel">
+                <div class="attraction-item">
+                    <div class="attraction-image" style="background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);"></div>
+                    <h3>Theme Park Zone</h3>
+                    <p>150,000 sqm of immersive experiences featuring cutting-edge attractions and interactive entertainment</p>
+                    <div class="attr-meta">500K+ annual visitors</div>
+                </div>
+                <div class="attraction-item">
+                    <div class="attraction-image" style="background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);"></div>
+                    <h3>Aquarium & Marine Life</h3>
+                    <p>One of the world's largest aquariums with 15,000 species and interactive marine education</p>
+                    <div class="attr-meta">$450M investment</div>
+                </div>
+                <div class="attraction-item">
+                    <div class="attraction-image" style="background: linear-gradient(135deg, #F093FB 0%, #F5576C 100%);"></div>
+                    <h3>Concert & Performance Hall</h3>
+                    <p>15,000-seat venue hosting Grammy-award-winning artists and global productions</p>
+                    <div class="attr-meta">200+ events/year</div>
+                </div>
+                <div class="attraction-item">
+                    <div class="attraction-image" style="background: linear-gradient(135deg, #FA709A 0%, #FEE140 100%);"></div>
+                    <h3>Cinema Complex</h3>
+                    <p>IMAX, 4DX, and premium formats. 25 screens with the latest technology</p>
+                    <div class="attr-meta">2M+ annual moviegoers</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. EVENTS & PLATFORM -->
+        <section id="events" class="section events-section" data-section="events">
+            <div class="section-header">
+                <h2>Global Events Platform</h2>
+                <p class="section-subtitle">Position your brand on the world's stage</p>
+            </div>
+            <div class="events-grid">
+                <div class="event-type">
+                    <h3>Brand Activations</h3>
+                    <p>150,000+ sqm of configurable space for pop-up stores, product launches, and brand experiences</p>
+                    <div class="event-stats">
+                        <span>350+ activations/year</span>
+                        <span>45M+ impressions</span>
+                    </div>
+                </div>
+                <div class="event-type">
+                    <h3>Conferences & Conventions</h3>
+                    <p>50,000 sqm of convention space with state-of-the-art AV and networking facilities</p>
+                    <div class="event-stats">
+                        <span>500K+ attendees/year</span>
+                        <span>100+ major events</span>
+                    </div>
+                </div>
+                <div class="event-type">
+                    <h3>Entertainment Events</h3>
+                    <p>World-class entertainment booking with proven ability to attract A-list performers</p>
+                    <div class="event-stats">
+                        <span>Concert revenue: $1.2B</span>
+                        <span>12M+ ticket sales</span>
+                    </div>
+                </div>
+                <div class="event-type">
+                    <h3>Fashion & Cultural</h3>
+                    <p>Fashion weeks, art exhibitions, and cultural festivals throughout the year</p>
+                    <div class="event-stats">
+                        <span>8 fashion seasons</span>
+                        <span>30M+ social impressions</span>
+                    </div>
+                </div>
+            </div>
+            <div class="events-showcase">
+                <h3>Recent Flagship Events</h3>
+                <div class="events-list">
+                    <div class="event-item">
+                        <span class="date">2025</span>
+                        <h4>Global Luxury Summit</h4>
+                        <p>4-day conference with 10,000+ C-suite executives from 150+ countries</p>
+                    </div>
+                    <div class="event-item">
+                        <span class="date">2025</span>
+                        <h4>International Fashion Week</h4>
+                        <p>200+ designers, 500K+ attendees, 100M+ global reach</p>
+                    </div>
+                    <div class="event-item">
+                        <span class="date">2025</span>
+                        <h4>Music Festival Series</h4>
+                        <p>12-month series featuring Grammy winners and emerging artists</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. CTA - Partnership Opportunities -->
+        <section id="cta" class="section cta-section" data-section="cta">
+            <div class="cta-container">
+                <h2>Partner With Westfield Dominion</h2>
+                <p class="cta-subtitle">Join the world's leading retail and entertainment destination</p>
+                
+                <div class="partnership-options">
+                    <div class="partnership-card">
+                        <h3>Retail Leasing</h3>
+                        <p>From luxury flagship to contemporary and lifestyle concepts</p>
+                        <a href="mailto:leasing@westfield-dominion.com" class="cta-button primary">Explore Spaces</a>
+                    </div>
+                    <div class="partnership-card">
+                        <h3>Sponsorships</h3>
+                        <p>Brand partnerships with 45M+ annual visitor touchpoints</p>
+                        <a href="mailto:partnerships@westfield-dominion.com" class="cta-button primary">Learn More</a>
+                    </div>
+                    <div class="partnership-card">
+                        <h3>Event Hosting</h3>
+                        <p>Booking world-class venues for your next major event</p>
+                        <a href="mailto:events@westfield-dominion.com" class="cta-button primary">Schedule Demo</a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Get In Touch</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Interest</option>
+                                <option value="retail">Retail Leasing</option>
+                                <option value="sponsorship">Sponsorships</option>
+                                <option value="events">Event Hosting</option>
+                                <option value="partnership">Other Partnership</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tell us about your opportunity" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="cta-button primary large">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- FAQ SECTION -->
+        <section id="faq" class="section faq-section" data-section="faq">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p class="section-subtitle">Find answers to common inquiries</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What are the leasing requirements?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Westfield Dominion welcomes retailers of all sizes. For luxury flagship spaces, we require established brands with proven market presence. Contemporary and lifestyle spaces have flexible requirements. Contact our leasing team for specific criteria.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How can I host an event at Westfield Dominion?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer versatile spaces for brand activations, conferences, concerts, and cultural events. Our 150,000 sqm of event space can be configured for events of any size. Contact our events team to discuss your vision and availability.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What sponsorship opportunities are available?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer multiple sponsorship tiers with access to 150M+ annual visitors. Packages include branding, event naming rights, exclusive partnerships, and premium positioning. Contact partnerships team for custom packages.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Is Westfield Dominion accessible to visitors with disabilities?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Westfield Dominion is fully accessible. We provide wheelchair access, accessible parking, accessible restrooms, and assistance services. For specific accessibility needs, please contact us at info@westfield-dominion.com.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What are the operating hours?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Westfield Dominion operates daily from 10:00 AM to 10:00 PM. Extended hours are available during peak seasons and special events. Restaurant and entertainment venues may have different operating hours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER SECTION -->
+        <section id="newsletter" class="section newsletter-section">
+            <div class="newsletter-container">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for exclusive offers, event updates, and partnership opportunities</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="newsletter-input-group">
+                        <input type="email" placeholder="Enter your email" required aria-label="Email address">
+                        <button type="submit" class="cta-button primary">Subscribe</button>
+                    </div>
+                    <p class="newsletter-consent">
+                        <input type="checkbox" id="newsConsent" required>
+                        <label for="newsConsent">I agree to receive emails from Westfield Dominion</label>
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="cookie-content">
+            <p><strong>Cookie Notice:</strong> We use cookies to enhance your experience. By continuing to browse, you agree to our use of cookies.</p>
+            <div class="cookie-buttons">
+                <button id="acceptCookies" class="cta-button primary small">Accept All</button>
+                <button id="rejectCookies" class="cta-button secondary small">Reject</button>
+                <a href="#" class="cookie-link">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Indicator -->
+    <div id="loadingIndicator" class="loading-spinner">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Accessibility Skip Link -->
+    <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Westfield Dominion</h4>
+                <p>The world's premier retail, dining, and entertainment destination.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#retail">Retail</a></li>
+                    <li><a href="#dining">Dining</a></li>
+                    <li><a href="#entertainment">Entertainment</a></li>
+                    <li><a href="#events">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>info@westfield-dominion.com</p>
+                <p>+1 (800) 900-7070</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Westfield Dominion. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/animations.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

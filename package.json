@@ -1,0 +1,75 @@
+{
+  "name": "westfield-dominion",
+  "version": "1.0.0",
+  "description": "Interactive browser-based sales deck for Westfield Dominion - world's premier shopping destination",
+  "private": true,
+  "homepage": "https://westfield-dominion.com",
+  "license": "PROPRIETARY",
+  "author": "Westfield Dominion",
+  "keywords": [
+    "sales-deck",
+    "interactive",
+    "luxury",
+    "shopping-mall",
+    "b2b",
+    "real-estate",
+    "retail"
+  ],
+  "scripts": {
+    "dev": "http-server -c-1 -o -p 8000",
+    "start": "http-server -c-1 -p 8000",
+    "build": "node scripts/optimize.js",
+    "optimize": "imagemin assets/images/** -o assets/images/optimized && ffmpeg -i assets/videos/hero-intro.mp4 -c:v libx264 -preset slow -crf 22 assets/videos/hero-intro-optimized.mp4",
+    "analyze": "lighthouse https://localhost:8000 --view",
+    "test": "jest",
+    "lint": "eslint js/**/*.js",
+    "deploy:github": "git add . && git commit -m 'Deploy' && git push origin main",
+    "deploy:vercel": "vercel",
+    "deploy:netlify": "netlify deploy --prod",
+    "generate-images": "node scripts/generate-ai-images.js",
+    "generate-copy": "node scripts/generate-copy.js"
+  },
+  "dependencies": {
+    "animate-scroll": "^1.2.0",
+    "gsap": "^3.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "eslint": "^8.40.0",
+    "http-server": "^14.1.0",
+    "imagemin": "^8.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.0",
+    "imagemin-webp": "^7.0.0",
+    "jest": "^29.0.0",
+    "lighthouse": "^9.6.0",
+    "netlify-cli": "^12.0.0",
+    "node-fetch": "^3.3.0",
+    "replicate": "^0.15.0",
+    "vercel": "^28.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "last 2 versions",
+      "Firefox ESR",
+      "not dead",
+      "not IE 11"
+    ],
+    "development": [
+      "last 3 Chrome versions",
+      "last 3 Firefox versions"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/westfield/westfield-dominion.git"
+  },
+  "bugs": {
+    "url": "https://github.com/westfield/westfield-dominion/issues"
+  }
+}

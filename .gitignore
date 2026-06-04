@@ -1,0 +1,86 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build & Distribution
+dist/
+build/
+*.zip
+*.tar.gz
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# OS
+.DS_Store
+.AppleDouble
+.LSOverride
+*.sublime-project
+*.sublime-workspace
+.vscode-settings.json
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local development
+.cache/
+.temp/
+temp/
+
+# Media optimization
+assets/videos/original/
+assets/images/source/
+assets/images/optimized/
+
+# Secrets
+.env.*.local
+secrets.json
+
+# Build artifacts
+*.css.map
+*.js.map
+
+# Production
+/dist
+/build
+/out
+
+# Vercel
+.vercel/
+
+# Netlify
+.netlify/
+
+# GitHub Pages
+/.github/
+
+# Analytics data
+analytics.json
+tracking.json
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
